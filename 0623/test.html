@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <!-- 
+        get   url提交  长度有限  安全性非常低  
+        url: http://127.0.0.1/php/0623/2.php?username=admin&pass=123
+        
+        post  暗文提交  长度也可以设定(配置文件中) 安全性较高  
+        注意  post表单是可以伪造的 
+        form 默认是get方式  
+     -->
+    <form action="./2.php" method="get">
+
+        <input type="text" name="username" value="" /><br>
+        <input type="submit" value="get提交">
+    </form>
+
+    <form action="./2.php" method="post">
+
+        <input type="text" name="username" value="" /><br>
+        <input type="submit" value="post提交">
+    </form>
+    <hr>
+    <!-- 这里也是一个get提交  -->
+    <a href="./2.php?page=2">下一页</a>
+
+</body>
+</html>
