@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // if () {
+
+        // } else if() {
+
+        // }
+
+        // switch(){
+
+        // }
+
+        // while(){
+
+        // }
+        // do{
+
+        // }while()
+
+        // 打印输出100以内奇数的和
+        var sum = 0;
+        for (var i = 1; i <= 100; i++) {
+            if(i % 2 != 0) {
+                sum = sum + i;
+            }
+        }
+
+        console.log(sum);
+        
+        // 质数 是指只能被1或者自己整除的自然数
+
+        // 1~100以内的所有质数  
+        for(var i = 2; i <= 100; i++) {
+           var flag = true;
+            for(var j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    flag = false;
+                }
+            }
+            if (flag) {
+                console.log(i+ ' ');
+            }
+        }
+
+
+        
+
+    </script>
+</body>
+
+</html>
