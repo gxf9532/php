@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+        /*
+            函数的参数 
+            分为形参和实参 
+            可以不是一一对应 
+            形参相当于在函数的内部声明的变量 但是并不赋值 
+
+            函数调用的时候可以指实参传入形参 
+            并不会检测实参的数据类型 也不会检测实参的数量
+            函数的实参可以是任意的数据类型
+        */
+        function foo(num1, num2) {
+            console.log(num1, num2)
+        }
+
+        // fun(1,2)
+        foo(1)
+
+        // 函数的形参可以有默认值 
+        // function demo(num1 = 0, num2 = 0) {
+        //     console.log(num1, num2);
+        // }
+        // demo(); // 0 0
+        // demo(100,200); // 100 200 
+
+        // 在ES5中 arguments是一个实参集合 ES6中被弃用
+        function demo() {
+            console.log(arguments);
+        }
+        demo(1, 2, 3, 4, 5, 6);
+
+    </script>
+</body>
+
+</html>

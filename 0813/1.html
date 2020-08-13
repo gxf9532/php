@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        // js对象
+        /*
+            js内部所有的数据类型最终都是对象
+
+            对象的分类：
+            1.内置对象 [js内部规定好的对象]
+            2.宿主对象 js运行环境提供的对象 只要是指浏览器对象 BOM DOM 
+            3.自定义对象 自己创建的对象
+
+            new 关键字来创建  new调用了构造函数constructor()  
+            而构造函数是专门用来创建对象的函数 
+        */
+        // console.log(Object); // ƒ Object() { [native code] }
+
+        //创建一个自定义对象
+        var obj = new Object();
+        // console.log(obj);
+
+        //对象可以添加属性和方法
+        obj.name = "李四";
+        obj.age = 20;
+        obj.sex = '男';
+
+        obj.eat = function () {
+            console.log('吃饭的方法')
+        }
+
+        // console.log(obj);
+
+        // 调用
+        console.log(obj.name);
+
+        obj.eat();
+
+        // 对象中不存在的属性 则返回undefined
+        console.log(obj.abc);// undefined
+
+        // 修改对象中的属性或者方法直接赋值覆盖即可 
+        obj.name = "陈友";
+        console.log(obj.name);
+
+        // 删除对象的属性
+        delete obj.name;
+        delete obj.eat;
+        console.log(obj);
+    </script>
+</body>
+
+</html>

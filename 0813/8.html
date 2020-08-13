@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        /*
+            函数的返回值 return  
+            函数的返回值是返回到函数的被调用处 
+            返回值可以使任意的数据类型
+            返回值后面的代码不再执行 
+            如果return后面不写值  则默认返回undefined 
+            如果不写return 则函数的默认返回值是undefined  
+        */
+        // function demo() {
+        //     // return 100;
+        //     // return;
+        //     // console.log(111111111111)
+        // }
+        // // 这里用变量来接收函数demo的返回值 
+        // var res = demo();
+        // console.log(res); //
+
+        // 自定义一个函数  如果传入的实参是偶数 则返回true 
+
+        // function demo(num) {
+        //     // if (num % 2 == 0) {
+        //     //     return true;
+        //     // } else {
+        //     //     return false;
+        //     // }
+
+        //     return num % 2 == 0 ? true : false;
+        // }
+        // console.log(demo(2));
+
+        // 函数的参数可以是一个对象
+        // function fun(obj) {
+        //     console.log(obj.name);
+        // }
+        // var obj = {
+        //     name: "lisi",
+        //     age: 20
+        // }
+        // fun(obj);
+
+        // function foo(args) {
+        //     // console.log(args)
+        //     args()
+        // }
+        // foo(function() {
+        //     console.log(1111111111)
+        // });
+
+        // 当传入一个基本参数不能解决复杂问题的时候 
+        // 我们可以将一个函数作为参数传入 这个函数称之为回调函数 
+
+        function plus(num1, num2) {
+            return num1 + num2;
+        }
+
+        function minus(num1, num2) {
+            return num1 - num2;
+        }
+
+        function fun(num1, num2, callback) {
+            var result = 0;
+            // console.log(typeof typeof callback)
+            if (typeof callback === 'function') {
+               result = callback(num1, num2);
+            }
+            return result;
+        }
+
+        var res = fun(1, 2, plus);
+        console.log(res);
+
+        var res = fun(1, 2, minus);
+        console.log(res);
+
+
+        // 定时器 每隔多长时间就执行一次
+        // setInterval(function() {
+        //     console.log(111111)
+        // }, 1000);
+
+        
+        // setInterval(function() {
+
+        // },1000);
+
+
+    </script>
+</body>
+
+</html>

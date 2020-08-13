@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function foo(num) {
+            return function (num) {
+                return num
+            }
+        }
+        function run(arg) {
+            return arg(100)
+        }
+        console.log(run(foo)(100))
+
+        // var obj = function() { return 123; }()
+        // alert(obj)
+    </script>
+</body>
+
+</html>

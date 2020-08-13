@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        // function fun1() {
+        //     return 1;
+        // }
+
+        // function fun2() {
+        //     return 2;
+        // }
+
+        // function fun(arg1, arg2) {
+        //     return fun1();
+        //     var res = fun2()
+        //     return res;
+        // }
+        // console.log(fun()) // 
+
+
+        // var num = 100;
+
+        // function demo() {
+        //     // 函数内部直接可以访问函数外部的变量
+        //     num++;
+        // }
+        // demo();
+
+        // console.log(num) /// 101 
+
+        function fun() {
+            var num = 99;
+
+            inside = function () {
+                num++;
+            }
+            function fun2() {
+                alert(num)
+            }
+            return fun2
+        }
+
+        var res = fun();
+        res();
+        inside();
+        res();
+
+
+    </script>
+</body>
+
+</html>

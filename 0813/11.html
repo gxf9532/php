@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        // function demo() {
+        //     var a = 0;
+        //     function inFun() {
+        //         a++;       
+        //         console.log(a)         
+        //     }
+        //     inFun();
+        // }
+        // demo();
+
+        //  function demo() {
+        //     var num = 100;
+        //  }
+        // demo();
+        // alert(num);
+
+        function outFun() {
+            var a = 0;
+            function inFun() {
+                a++;
+                console.log(a);
+            }
+            return inFun;
+        }
+
+        var res = outFun();
+        res();// 1 
+        res();// 2
+
+
+        
+
+
+
+    </script>
+</body>
+
+</html>

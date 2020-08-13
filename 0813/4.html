@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+        // 对象的字面量创建
+        // console.log(new Object());//{} 
+        var obj = {};
+        obj.name = "陈友";
+
+        var obj2 = { name: "李四", age: 20, sex: "男" };
+
+        var obj3 = {
+            name: "王五",
+            age: 20,
+            sex: '男'
+        };
+        // for ... in 语法用来遍历对象
+        for(var i in obj3) {
+            // console.log(i)
+            console.log(obj3[i]);
+        }
+
+    </script>
+</body>
+
+</html>

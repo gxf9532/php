@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+
+        /*
+            js变量都是保存在栈内存中的
+            js引擎中变量的存储位置 有两种 一种是堆内存  一种是栈内存 
+
+            栈内存主要用来存储各种基本类型的变量 包括Boolean Number 等 
+            值和值之间是相互独立的 修改一个变量不会影响到其他的变量 
+
+            对象是保存在堆内存中的 
+            新创建一个对象 就会在堆内存中开辟一块空间 
+
+            变量保存的是对象的内存地址(对象的引用)
+            多个变量保存的是同一个对象的引用 改变一个 则另外一个也发生变化 
+            
+        */
+
+        //    var obj = new Object();
+
+        // var a = 1;
+        // var b = a;
+        // a++;
+        // console.log("a=" + a, "b=" + b);
+
+        // var obj = new Object();
+        // obj.name = "陈友";
+
+        // var obj2 = obj;
+
+        // obj.name = "罗志祥";
+
+        // // console.log(obj.name)
+        // // console.log(obj2.name)
+
+        // obj = null;
+
+        // console.log(obj)
+        // console.log(obj2)
+
+
+        var o1 = new Object();
+        var o2 = new Object();
+        o1.name = "张三";
+        o2.name = "李四";
+
+        console.log(o1 == o2);// false
+
+        
+        
+
+    </script>
+</body>
+</html>
